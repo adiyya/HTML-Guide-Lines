@@ -24,3 +24,5 @@
 
     1. JAWS 14 and 15 with Firefox (the frame SRC filename is read instead)
     2. VoiceOver on OSX 10.9 (a meaningless title like "Frame twelve" is read out)
+ ## The 'frameborder' attribute on the 'iframe' element is obsolete. Use CSS instead. ##
+  Dont use 'frameborder' for 'iframe'. The equivalent of frameborder in css is border: 0px;. Add it to your iframe in css.
