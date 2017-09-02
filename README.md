@@ -18,3 +18,9 @@
   HREF="" or SRC="" can cause unexpected effects such as traffic spikes or cookie corruption, and causes JavaScript error events to fire on Firefox.
 ## Users should be able to quickly look at each link and tell where it goes. ##
   Don't use generic link labels like "click here" or "read more" because they're hard to tell apart when users scan a page.
+## No TITLE attributes found for the frames ##
+  Add a TITLE attribute to each FRAME and IFRAME element (e.g. TITLE="Main Content"). Without a TITLE some screen readers read out the FRAME filename, which is usually meaningless.
+  IFRAMEs with no title cause problems in:
+
+    1. JAWS 14 and 15 with Firefox (the frame SRC filename is read instead)
+    2. VoiceOver on OSX 10.9 (a meaningless title like "Frame twelve" is read out)
